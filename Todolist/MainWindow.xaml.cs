@@ -3,9 +3,6 @@ using System.Windows.Controls;
 
 namespace Todolist;
 
-/// <summary>
-/// Логика взаимодействия для MainWindow.xaml
-/// </summary>
 public partial class MainWindow : Window
 {
     private readonly TodoService _todoService;
@@ -207,4 +204,4 @@ public partial class MainWindow : Window
             MessageBox.Show($"Не удалось загрузить задачи: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
         }
     }
-}
+}
